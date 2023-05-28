@@ -1,0 +1,41 @@
+<form autocomplete="off" action="/api/users" method="POST" id="add_user">
+    <div class="new_user">
+      <div class="form-group">
+          <label for="name" class="text-light">Nombre</label>
+          <input type="hidden" name="id" value="">
+          <input type="text" name="nombre" value="" placeholder="Oscar Fuentes">
+      </div>
+      <div class="form-group">
+          <label for="Email" class="text-light">Email</label>
+          <input type="text" name="email" value="" placeholder="example@gmail.com">
+      </div>
+      <div class="form-group">
+          <label for="Genero" class="text-light">Genero</label>
+          <div class="radio inline">
+              <input type="radio" id="radio-2" name="genero" value="Masculino"> 
+              <label for="radio-2" class="radio-label">Masculino</label>
+          </div>
+          <div class="radio inline">
+              <input type="radio" id="radio-3" name="genero" value="Femenino"> 
+              <label for="radio-3" class="radio-label">Femenino</label>
+          </div>
+      </div>
+
+      <div class="form-group">
+          <label for="Estado" class="text-light">Estado</label>
+          <div class="radio inline">
+              <input type="radio" id="radio-4" name="estado" value="Activo"> 
+              <label for="radio-4" class="radio-label">Activo</label>
+          </div>
+          <div class="radio inline">
+              <input type="radio" id="radio-5" name="estado" value="Inactivo"> 
+              <label for="radio-5" class="radio-label">Inactivo</label>
+          </div>
+      </div>
+
+      <div class="form-group">
+          <button type="submit" class="btn text-dark update">Guardar</button>
+      </div>
+
+    </div> 
+  </form>
